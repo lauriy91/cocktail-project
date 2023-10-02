@@ -1,0 +1,6 @@
+<div class="container">
+    <h4 class="text-center">{{titulo}}</h4>
+    <div class="row">
+        <app-bebida class="col-3" titulo="{{bebida.strDrink}}" imagen="{{bebida.strDrinkThumb}}" id="{{ bebida.idDrink }}" *ngFor="let bebida of bebidas"></app-bebida>
+    </div>
+</div>
