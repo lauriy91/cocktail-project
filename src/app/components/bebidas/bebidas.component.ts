@@ -23,7 +23,7 @@ export class BebidasComponent {
   }
 
   getBebidas() {
-    this.bebidasService.getRandomDrinks().pipe(delay(3000)).subscribe((response: any) => {
+    this.bebidasService.getRandomDrinks().subscribe((response: any) => {
       this.bebidas = response.drinks;
     });
   }
